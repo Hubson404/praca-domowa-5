@@ -16,5 +16,11 @@ public class ExceptionHandlerController {
         log.error(e.getMessage());
     }
 
+    @ExceptionHandler(InsufficientDataException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    void insufficientDataHandler(InsufficientDataException e) {
+        log.error(e.getMessage());
+    }
+
 
 }

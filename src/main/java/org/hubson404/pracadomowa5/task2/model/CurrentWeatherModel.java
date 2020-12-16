@@ -7,7 +7,7 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class CurrentWeather {
+public class CurrentWeatherModel {
 
     private List<Weather> weather;
     private Main main;

@@ -1,7 +1,7 @@
 package org.hubson404.pracadomowa5.task2;
 
 import lombok.RequiredArgsConstructor;
-import org.hubson404.pracadomowa5.task2.model.CurrentWeather;
+import org.hubson404.pracadomowa5.task2.model.CurrentWeatherModel;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,7 +16,7 @@ public class WeatherController {
 
     @GetMapping("/weather")
     public CurrentWeatherDTO getCurrentWeather(@RequestParam String location) {
-        CurrentWeather weather = weatherService.getWeather(location);
+        CurrentWeatherModel weather = weatherService.getWeather(location);
         CurrentWeatherDTO currentWeatherDTO = weatherMapper.mapToCurrentWeatherDTO(weather,location);
         return currentWeatherDTO;
     }

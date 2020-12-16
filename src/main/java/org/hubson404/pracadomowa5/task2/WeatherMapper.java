@@ -2,14 +2,14 @@ package org.hubson404.pracadomowa5.task2;
 
 
 import lombok.NoArgsConstructor;
-import org.hubson404.pracadomowa5.task2.model.CurrentWeather;
+import org.hubson404.pracadomowa5.task2.model.CurrentWeatherModel;
 import org.springframework.stereotype.Component;
 
 @Component
 @NoArgsConstructor
 public class WeatherMapper {
 
-    CurrentWeatherDTO mapToCurrentWeatherDTO(CurrentWeather weather, String location){
+    CurrentWeatherDTO mapToCurrentWeatherDTO(CurrentWeatherModel weather, String location){
 
         return CurrentWeatherDTO.builder()
                 .location(location)

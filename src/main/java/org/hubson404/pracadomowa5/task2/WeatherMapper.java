@@ -2,7 +2,6 @@ package org.hubson404.pracadomowa5.task2;
 
 
 import lombok.NoArgsConstructor;
-import org.hubson404.pracadomowa5.task2.model.CurrentWeatherModel;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import org.hubson404.pracadomowa5.exceptions.DataProcessingException;
 import org.hubson404.pracadomowa5.exceptions.InsufficientDataException;
-import org.hubson404.pracadomowa5.task2.model.CurrentWeatherModel;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;

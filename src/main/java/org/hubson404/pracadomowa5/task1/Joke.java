@@ -1,4 +1,4 @@
-package org.hubson404.pracadomowa5.task1.model;
+package org.hubson404.pracadomowa5.task1;
 
 import lombok.Data;
 

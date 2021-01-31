@@ -4,8 +4,6 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import org.hubson404.pracadomowa5.exceptions.DataProcessingException;
-import org.hubson404.pracadomowa5.task1.model.Joke;
-import org.hubson404.pracadomowa5.task1.model.ResponseModel;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;

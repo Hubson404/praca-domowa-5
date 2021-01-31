@@ -12,15 +12,13 @@ public class ExceptionHandlerController {
 
     @ExceptionHandler(DataProcessingException.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-    void dataProcessingHandler(DataProcessingException e) {
-        log.error(e.getMessage());
+    ErrorInformation dataProcessingHandler(DataProcessingException exc) {
+        return new ErrorInformation(exc.getMessage());
     }
 
     @ExceptionHandler(InsufficientDataException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
-    void insufficientDataHandler(InsufficientDataException e) {
-        log.error(e.getMessage());
+    ErrorInformation insufficientDataHandler(InsufficientDataException exc) {
+        return new ErrorInformation(exc.getMessage());
     }
-
-
 }
